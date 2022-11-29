@@ -57,3 +57,47 @@ body {
   background-color: white;
   color: black;
 }
+
+/* -----------FOOTER----------------- */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 2%;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.footer-text{
+    margin-bottom: .5em;
+}
+
+.social-icon{
+    transition: 0.3s;
+    font-size: 1.5rem;
+}
+
+.social-icon:not(:last-child){
+    margin-right: .7em;
+}
+
+/* ---------------MEDIA-QUERIES------------------ */
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 0.8rem;
+  }
+
+  .navbar {
+    padding: 4%;
+  }
+
+  /* ----------------FOOTER---------------- */
+  footer {
+    font-size: 1rem;
+    padding: 4%;
+  }
+}
