@@ -1,22 +1,23 @@
 import React from 'react'
 import {BiDumbbell} from "react-icons/bi"
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <nav>
     <div className="navbar">
       <div>
-        <a to="/" className="brand">
+        <Link to="/" className="brand">
         <BiDumbbell/> Power gym 
-        </a>
+        </Link>
       </div>
       <div className="link-container">
-        <a href='#' className="link">
+        <Link to="/" className="link">
           Add equipment
-        </a>
-        <a href='#' className="link">
+        </Link>
+        <Link to="list" className="link">
           All equipment
-        </a>
+        </Link>
       </div>
     </div>
   </nav>
