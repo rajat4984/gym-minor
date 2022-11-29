@@ -74,8 +74,9 @@ body {
 }
 
 .form-heading {
-  margin: 1em 0;
-  text-shadow: 1px 2px black;
+  margin: 1em 0 2em 0;
+  text-shadow: 2px 2px 0px black; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+  font-size: 1.2rem;
 }
 
 label {
@@ -117,6 +118,67 @@ input[type="number"] {
 
 .submit-btn:hover {
   transform: scale(1.1);
+}
+
+/* ---------------LIST---------------- */
+
+.list{
+    min-height: 100vh;
+}
+
+.all-eq-heading {
+  color: white;
+  text-shadow: 2px 2px 0px black; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+  text-align: center;
+  margin: 2em;
+  font-size: 1.2rem;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 2em 8em 4em 8em;
+  border: 1.5px solid white;
+  border-radius: 10px;
+}
+
+.list-item,
+.list-heading {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  font-size: 1.2rem;
+}
+
+.list-item > div,
+.list-heading > div {
+  padding: 1.8em 0;
+}
+
+.list-item > div:last-child,
+.list-heading > div:last-child {
+  border-right: 0;
+}
+
+.list-heading {
+  font-weight: bold;
+  border-bottom: 1px solid white;
+}
+
+/* ------------------LIST-ITEM--------------- */
+.list-item {
+  border-bottom: 1px solid white;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.list-item:hover {
+  opacity: 0.5;
+}
+
+.list-item:last-child {
+  border-bottom: 0;
 }
 
 /* -----------FOOTER----------------- */

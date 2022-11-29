@@ -16,7 +16,7 @@ function Navbar() {
           Add equipment
         </Link>
         <Link to="list" className="link">
-          All equipment
+          All equipments
         </Link>
       </div>
     </div>
