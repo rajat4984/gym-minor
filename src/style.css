@@ -1,9 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
 
-*{
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  font-family: "Roboto Condensed", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  background: linear-gradient(
+    to left top,
+    #820263,
+    #9b305c,
+    #aa545e,
+    #b3766b,
+    #b89685
+  );
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+}
+
+/* --------------------NAVBAR------------------ */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.7%;
+  font-weight: bold;
+  align-items: center;
+  border-bottom: 1px solid white;
+  box-shadow: 60px -16px black;
+}
+
+.brand {
+  font-size: 1.8rem;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+  padding: 0.2em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.link {
+  text-decoration: none;
+  transition: 0.3s;
+  color: white;
+  font-size: 1.3rem;
+  padding: 0.5em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.link:hover,
+.brand:hover {
+  background-color: white;
+  color: black;
+}
