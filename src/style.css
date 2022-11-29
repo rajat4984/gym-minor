@@ -17,7 +17,6 @@ body {
     #b89685
   );
   background-repeat: no-repeat;
-  height: 100vh;
   color: white;
 }
 
@@ -47,7 +46,8 @@ body {
   transition: 0.3s;
   color: white;
   font-size: 1.3rem;
-  padding: 0.5em;
+  padding: 0.3em;
+  margin: 0.5em;
   cursor: pointer;
   border-radius: 5px;
 }
@@ -55,7 +55,68 @@ body {
 .link:hover,
 .brand:hover {
   background-color: white;
-  color: black;
+  color: #9b305c;
+}
+
+/* -------------FORM---------------- */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+.submission-form {
+  border: 2px white solid;
+  padding: 2em;
+  width: 30%;
+  border-radius: 20px;
+}
+
+.form-heading {
+  margin: 1em 0;
+  text-shadow: 1px 2px black;
+}
+
+label {
+  display: block;
+  padding: 1em 0;
+  font-size: 1.2rem;
+}
+input[type="text"],
+input[type="number"] {
+  border-radius: 5px;
+  border: none;
+  display: block;
+  width: 100%;
+  height: 2em;
+  font-size: 1rem;
+  outline: none;
+}
+.submit-btn {
+  width: initial;
+  display: block;
+  margin-top: 2em;
+  background: linear-gradient(
+    to left top,
+    #820263,
+    #9b305c,
+    #aa545e,
+    #b3766b,
+    #b89685
+  );
+  color: white;
+  font-size: 1rem;
+  padding: 0.5em 2em;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  border: 2px solid white;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  transform: scale(1.1);
 }
 
 /* -----------FOOTER----------------- */
@@ -72,17 +133,17 @@ footer {
   text-align: center;
 }
 
-.footer-text{
-    margin-bottom: .5em;
+.footer-text {
+  margin-bottom: 0.5em;
 }
 
-.social-icon{
-    transition: 0.3s;
-    font-size: 1.5rem;
+.social-icon {
+  transition: 0.3s;
+  font-size: 1.5rem;
 }
 
-.social-icon:not(:last-child){
-    margin-right: .7em;
+.social-icon:not(:last-child) {
+  margin-right: 0.7em;
 }
 
 /* ---------------MEDIA-QUERIES------------------ */
