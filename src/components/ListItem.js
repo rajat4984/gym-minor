@@ -1,22 +1,25 @@
 import React from "react";
+import { AiFillDelete } from "react-icons/ai";
 
 function ListItem() {
   return (
     <div>
       <div className="list-heading">
-        <div className="heading-symbol">Sno</div>
-        <div className="heading-name">Name</div>
-        <div className="heading-current-price">Weight</div>
-        <div className="heading-high">Price</div>
+        <div className="heading-number">Sno</div>
+        <div className="heading-eq-name">Name</div>
+        <div className="heading-eq-weight">Weight</div>
+        <div className="heading-eq-price">Price</div>
+        <div className="heading-eq-delete">Delete</div>
       </div>
-
       <div className="list-item">
         <div className="number">1.</div>
         <div className="eq-name">Dumbell</div>
         <div className="eq-weight">2323 Kg</div>
         <div className="eq-price">$43534</div>
-        <hr />
+        <div className="eq-delete">{<AiFillDelete />}</div>
       </div>
+
+      {/* 
 
       <div className="list-item">
         <div className="number">2.</div>
@@ -45,7 +48,7 @@ function ListItem() {
         <div className="eq-weight">2323 Kg</div>
         <div className="eq-price">$43534</div>
         <hr />
-      </div>
+      </div> */}
     </div>
   );
 }

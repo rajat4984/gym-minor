@@ -1,5 +1,4 @@
 import React from "react";
-import { BiDumbbell } from "react-icons/bi";
 
 function Form() {
   return (

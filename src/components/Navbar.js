@@ -15,7 +15,7 @@ function Navbar() {
         <Link to="/" className="link">
           Add equipment
         </Link>
-        <Link to="list" className="link">
+        <Link to="items" className="link">
           All equipments
         </Link>
       </div>
